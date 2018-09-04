@@ -39,7 +39,7 @@ public class MusicController {
 
     @GetMapping("hello")
     private String hello(){
-        System.out.println("###################");
+        System.out.println("###################  ");
 
         List<Map<String, Object>> stuList = studentService.listStudent();
 
