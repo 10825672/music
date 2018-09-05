@@ -10,7 +10,6 @@
 package com.gfc.controller;
 
 import com.gfc.service.StudentService;
-import org.apache.ibatis.scripting.xmltags.ForEachSqlNode;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -42,12 +41,6 @@ public class MusicController {
         System.out.println("###################");
 
         List<Map<String, Object>> stuList = studentService.listStudent();
-
-        Iterator<Map<String, Object>> it = stuList.iterator();
-        while (it.hasNext()) {
-            Map<String, Object> map = it.next();
-            System.out.println(map);
-        }
 
         return "aaaaaaa";
     }
